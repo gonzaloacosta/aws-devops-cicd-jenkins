@@ -112,7 +112,7 @@
                         }
                       },
 
-      "CodBuildProject": {
+      "CodeBuildProject": {
                 "Type": "AWS::CodeBuild::Project",
                 "Properties": {
                   "Name": { "Ref": "CodeBuildProject"},
@@ -294,7 +294,7 @@
                                "chown nginx:nginx /web/initalpass.html \n",
 
                               "# Configure AWS CLI and GIT for jenkins user\n",
-                                "sudo su - jenkins --shell /bin/bash -c \"aws configure set region eu-central-1\" \n",
+                                "sudo su - jenkins --shell /bin/bash -c \"aws configure set region us-east-1\" \n",
                                 "sudo su - jenkins --shell /bin/bash -c \"aws configure set output json\" \n",
                                 "#until [ -f /var/lib/jenkins/jenkins.install.InstallUtil.lastExecVersion ]; do   sleep 5; service jenkins restart; done\n",
                                 "while [ ! -f /var/lib/jenkins/jenkins.install.InstallUtil.lastExecVersion ]; do echo waiting for jenkins to finish setup; sleep 10; done; service jenkins restart\n",
