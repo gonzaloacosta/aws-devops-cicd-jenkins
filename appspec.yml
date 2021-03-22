@@ -13,6 +13,6 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop_flask.py
+    - location: scripts/stop_flask1.sh
       timeout: 300
       runas: root
